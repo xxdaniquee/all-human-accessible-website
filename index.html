@@ -36,61 +36,58 @@
                 <h1>Ontdek bruisend Amsterdam West</h1>
             </div>
 
-<!-- CONTENT -->
 
-        <p class="initiatief-title">- Buurtinitiatieven -</p>
+        <section class="formulier">
+            <h2> Zit jij bij een organisatie die klaarstaat voor de buurt en haar bewoners? <br> Meld deze dan aan en kom op onze site!</h2>
+            <h3>Gegevens organisatie</h3>
+            <p>Vul hier de gegevens in die op jullie pagina komen te staan en contactgevens die geïnteresseerde mogen gebruiken om jullie te contacten. <br> Onderdelen met een <span>*</span> zijn verplichte onderdelen.</p>
 
-            <div class="wrap">
-                <article class="box">
-                    <div class="box-top">
-                            <img class="box-image" src="./assets/Hallen.jpeg" alt="Passage van de Hallen">
-                        <div class="title-flex">
-                                <h3 class="box-title">4 mei commité Oud-West</h3>
-                                <p class="adress">Hannie Dankbaarpassage</p>
-                        </div>
-                            <p class="description">Organiseren elk jaar 4-mei herdenking Amsterdam oud-west in de passage van De Hallen.</p>
-                    </div>
-                        <a href="#" class="button">Meer informatie</a>
-                </article>
+            <form action="verwerk_formulier.php" method="post">
+                <label for="organisatie-naam">Naam van organisatie *</label>
+                <input type="text" class="naam" name="naam" required>
+
+                <label for="organisatie-contactpersoon">Contactpersoon *</label>
+                <input type="text" class="contactpersoon" name="contactpersoon" required>
+            
+                <label for="adres">Straat + huisnummer *</label>
+                <input type="text" class="adres" name="adres" required>
+
+                <label for="postcode">postcode *</label>
+                <input type="text" class="postcode" name="postcode">
+
+                <label for="email">Email adres *</label>
+                <input type="text" class="email" name="email" required>
+
+                <label for="telefoon">Telefoonnummer</label>
+                <input type="text" class="telefoon" name="telefoon">
                 
-                <article class="box">
-                    <div class="box-top">
-                            <img class="box-image" src="./assets/abc.png" alt="Buurvrouwen">
-                        <div class="title-flex">
-                            <h3 class="box-title">Amsterdams Buurvrouwen Contact</h3>
-                            <p class="adress">Oranje Nassaulaan</p>
-                        </div>
-                            <p class="description">Organiseren taalles voor geïsoleerde anderstaligen, valt onder De Regenbooggroep.</p>
-                    </div>
-                            <a href="#" class="button">Meer informatie</a>
-                 </article>
+                <label for="beschrijving">Korte beschrijving over de organisatie *</label>
+                <textarea class="beschrijving" name="beschrijving" rows="3" required></textarea>
 
-                <article class="box">
-                    <div class="box-top">
-                            <img class="box-image" src="./assets/computer.jpeg" alt="Logo">
-                        <div class="title-flex">
-                            <h3 class="box-title">Actief Computer Centrum West</h3>
-                            <p class="adress">Cornelis Dirkszstraat</p>
-                        </div>
-                            <p class="description">Geven betaalbare computerlessen op alle niveaus voor alle leeftijden.</p>
-                    </div>
-                            <a href="#" class="button">meer informatie</a>
-                </article>
+                <label for="foto">Voeg een foto van de organisatie toe * </label>
+                <input type="file" class="foto" name="foto" required>
+            </form>
 
-                <article class="box">
-                    <div class="box-top">
-                            <img class="box-image" src="./assets/bilderdijkpark.png" alt="Speeltuin">
-                        <div class="title-flex">
-                            <h3 class="box-title">ASV <br> Bilderdijkpark</h3>
-                            <p class="adress">Bilderdijkpark</p>
-                        </div>
-                            <p class="description">Speeltuinvereniging/speeltuin met toezicht waar veel kidsactiviteiten worden georganiseerd.</p>
-                    </div>
-                            <a href="#" class="button">Meer informatie</a>
-                </article>
-            </div>
+            <h3>Gegevens contactpersoon</h3>
+            <p>Deze informatie komt niet op jullie pagina en wordt alleen gebruikt als contact voor De Hallen</p>
+            <form>
+                <label for="naam">Naam contactpersoon *</label>
+                <input type="text" class="naam" name="naam" required>
 
-              <a href="buurtinitiatieven.html"><Button class="meer">Nog meer initiatieven</Button></a>
+                <label for="functie">Functie *</label>
+                <input type="text" class="functie" name="functie" required>
+
+                <label for="email">Email adres *</label>
+                <input type="text" class="email" name="email" required>
+
+                <label for="telefoon">Telefoonnummer *</label>
+                <input type="text" class="telefoon" name="telefoon" required>
+
+                <input type="submit" value="Verzenden">
+            </form>
+
+
+        </section>
 
         </main>
 
